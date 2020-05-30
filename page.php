@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title><?php bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+    <div id="whole-page">
+        <?php get_header(); ?>
+
+        <div id="container-wrapper">
+            <div id="container-page">
+                <?php
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post();
+                ?>
+                        <div class="post">
+                            <h2>
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h2>
+                            <div class="entry">
+                                <?php the_content(); ?>
+                                <?php /*dividing page if needed*/ wp_link_pages(); ?>
+                                <?php edit_post_link('Edit', '<p>', '</p>'); ?>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <div class="post">
+                        <h2>
+                            <?php _e('Not Found'); ?>
+                        </h2>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+
+        <?php get_footer(); ?>
+
+    </div>
+</body>
+
+</html>
