@@ -227,7 +227,7 @@ p.postmetadata a {
 
 #sidebar-myinfo-contact a {
     font-size: 20px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #sidebar-myinfo-contact-line1 {
@@ -238,12 +238,20 @@ p.postmetadata a {
     box-sizing: border-box;
 }
 
-#sidebar-myinfo-contact-line1-item1 {
+.sidebar-myinfo-contact-item {
     display: inline-block;
     width: 70px;
     height: 30px;
     text-align: center;
     margin: 0 auto;
+    border: 2px solid rgb(61, 138, 125);
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.sidebar-myinfo-contact-item:hover {
+    background-color: rgb(61, 138, 125);
+    color: #fff;
 }
 
 #sidebar-myinfo-contact-divider {
@@ -251,17 +259,10 @@ p.postmetadata a {
     width: 20px;
 }
 
-#sidebar-myinfo-contact-line1-item2 {
-    display: inline-block;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-    margin: 0 auto;
-}
-
 #sidebar-myinfo-bottom {
     height: 25px;
     background-color: rgb(36, 40, 45);
+    margin: 10px 0 0 0;
 }
 
 #sidebar-big-things {
