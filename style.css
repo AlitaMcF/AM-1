@@ -115,11 +115,11 @@ a {
 .post {
     padding: 0px 0 10px 0;
     background-color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
     /* border-radius: 5px; */
     /*border: solid 1px #ddd;*/
     position: relative;
-    border-bottom: solid 4px rgb(36, 40, 45);
+    border-bottom: solid 2px rgb(36, 40, 45);
 }
 
 .post .metainfo h2 a{
@@ -341,7 +341,8 @@ img {
 
 #footer-maincontent a {
     text-decoration: none;
-    color: #ccc;
+    /* color: #ccc; */
+    color: rgb(156, 245, 230);
 }
 
 #footer-slogan {
@@ -369,12 +370,13 @@ img {
     float: right;
     width: 300px;
     margin: 20px 50px 0 50px;
+    text-align: left;
 }
 
 .footer-social-item-head {
-    padding: 0 30px 0 30px;
     font-size: 16px;
     font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 .footer-social-item p a {
@@ -402,6 +404,30 @@ img {
     border-left: solid 1px rgb(136, 199, 188);
     font-size: 15px;
     line-height: 22px;
+}
+
+#goTop {
+    position: fixed;
+    right: 3%;
+    bottom: -2px;
+    box-sizing: border-box;
+    padding: 4px 14px 4px 14px;
+    border: solid 1px rgb(36, 40, 45);
+    border-bottom: 0px;
+    background-color: rgb(36, 40, 45);
+    color: rgb(25, 189, 161);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none; /*make button unvisible at the beginning*/
+}
+
+#goTop:hover {
+    border: 1px solid rgb(36, 40, 45);
+    border-bottom: 0px;
+    background-color: rgb(61, 138, 125);
+    color: rgb(36, 40, 45);
 }
 
 .comments-template{

@@ -63,6 +63,29 @@
         <?php get_footer(); ?>
 
     </div>
+
+    <button id="test" style="position:fixed;right:0;bottom:0">回到顶部</button>
+    <script>
+        var timer = null;
+        test.onclick = function() {
+            cancelAnimationFrame(timer);
+            timer = requestAnimationFrame(function fn() {
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if (oTop > 0) {
+                    scrollTo(0, oTop - 135);
+                    timer = requestAnimationFrame(fn);
+                } else {
+                    cancelAnimationFrame(timer);
+                }
+            });
+        }
+    </script>
+
+    <button id="goTop">GoTop</button>
+    <script>
+        
+    </script>
+
 </body>
 
 </html>
