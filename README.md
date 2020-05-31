@@ -21,4 +21,4 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 - [ ] **single.php** main code.
 - [ ] **search.php** main code.
 - [ ] **404.php** main code.
-- [ ] **footer.php** main code.
+- [x] **footer.php** main code.
