@@ -27,3 +27,19 @@ function add_my_script() {
         array('jquery') // this array lists the scripts upon which your script depends
     );
 }
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'primary',
+            'name'          => __( 'Primary Sidebar' ),
+            'description'   => __( '主页sidebar下方添加组件' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s" style="padding: 20px 30px; font-size: 18px">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title" style="text-align: center">',
+            'after_title'   => '</h3><hr style="width:100%; size:1px; color:#222"/>',
+        )
+    );
+}

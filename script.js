@@ -1,11 +1,11 @@
 jQuery(document).ready(function ($) {
     $(window).scroll(function () {
+        /*设置goTop按钮的自动消失与出现*/
         var scroHei = $(window).scrollTop(); //滚动的高度
         if (scroHei > 400) {
-            // $("#goTop").fadeIn();
             $("#goTop").slideDown(300, function(){});
         } else {
-            // $("#goTop").fadeOut();
+            // slideUp() function will change the height into 0, so button will disappear.
             $("#goTop").slideUp(300, function(){});
         }
     });
