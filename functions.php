@@ -28,8 +28,11 @@ function add_my_script() {
     );
 }
 
-add_action( 'widgets_init', 'my_register_sidebars' );
-function my_register_sidebars() {
+/* 
+register a widget area in sidebar.php 
+*/
+add_action( 'widgets_init', 'my_register_sidebar' );
+function my_register_sidebar() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
@@ -43,3 +46,4 @@ function my_register_sidebars() {
         )
     );
 }
+

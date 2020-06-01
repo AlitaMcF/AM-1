@@ -63,9 +63,6 @@
         <?php get_footer(); ?>
 
     </div>
-
-    <button id="goTop">GoTOP</button>
-
 </body>
 
 </html>
