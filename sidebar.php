@@ -50,5 +50,5 @@
         </div>
 
     </div>
-    <?php dynamic_sidebar('primary');//可以在管理页给sidebar动态添加小组件的地方 ?>
+    <?php dynamic_sidebar('primaryWidget');//可以在管理页给sidebar动态添加小组件的地方 ?>
 </div>
