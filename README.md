@@ -22,3 +22,4 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 - [ ] **search.php** main code.
 - [ ] **404.php** main code.
 - [x] **footer.php** main code.
+- [ ] add **GoTOP** button.
