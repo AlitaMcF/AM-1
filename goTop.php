@@ -1,1 +1,0 @@
-<button id="goTop">GoTOP</button>
