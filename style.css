@@ -99,7 +99,7 @@ a {
     border: solid 2px rgb(25, 189, 161);
     box-sizing: border-box;
     display: block;
-    padding: 0 5px 0 7px;
+    padding: 0 5px 0 0px;
 }
 
 #header-navigator-search #searchinput {
@@ -113,7 +113,8 @@ a {
     box-sizing: border-box;
     float: left;
     color: #eee;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0 0 0 8px;
 }
 :focus {
     outline: none;
