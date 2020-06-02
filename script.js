@@ -27,11 +27,11 @@ jQuery(document).ready(function($) {
 
     // add action to mouseenter
     pdlist.mouseenter(function(){
-        $(this).children('ul').stop().slideDown(350);
+        $(this).children('ul').stop().slideDown(300);
     });
 
     // add action to mouseleave
     pdlist.mouseleave(function(){
-        $(this).children('ul').stop().slideUp(700);
+        $(this).children('ul').stop().slideUp(600);
     });
 });

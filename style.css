@@ -69,10 +69,12 @@ a {
 #header-navigator {
     float: right;
     height: 100%;
+    margin: 0 20px 0 0;
 }
 
 #header-navigator p {
     font-size: 19px;
+    padding: 0 0 0 20px;
 }
 
 #header-navigator>ul {
@@ -81,11 +83,14 @@ a {
     padding: 0;
     margin: 0;
     line-height: 70px;
+    position: relative;
 }
 
 #header-navigator>ul>li {
     float: left;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 #header-navigator>ul>li>ul {
@@ -95,13 +100,19 @@ a {
     font-size: 18px;
     text-align: left;
     padding: 0;
-    max-width: 200px;
+    box-sizing: border-box;
+    min-width: 120px;
+    position: absolute;
 }
 
 #header-navigator>ul>li>ul>li {
     padding: 10px 20px;
     border-bottom: solid 1px #eee;
     line-height: 18px;
+}
+
+#header-navigator>ul>li>ul>li:last-child {
+    border-bottom: none;
 }
 
 #container-wrapper {

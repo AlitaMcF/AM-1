@@ -12,7 +12,7 @@
         </div>
         <ul>
             <li>
-                <p>All post &#926;</p>
+                <p>All post &#8801;</p>
                 <ul>
                     <li>nihao</li>
                     <li>wohao</li>
@@ -20,7 +20,7 @@
                 </ul>
             </li>
             <li>
-                <p>Series &#8744;</p>
+                <p>Series &#8801;</p>
                 <ul>
                     <li>LeetCode</li>
                     <li>WordPress</li>
@@ -29,14 +29,14 @@
                 </ul>
             </li>
             <li>
-                <p>Awesome projects &#926;</p>
+                <p>Awesome projects &#8801;</p>
                 <ul>
                     <li>Self ML-Framework</li>
                     <li>Arduino robots</li>
                 </ul>
             </li>
             <li>
-                <p>Futuristic plan &#926;</p>
+                <p>Futuristic plan &#8801;</p>
                 <ul>
                     <li>Home Assistant</li>
                     <li>Real intelligent robots</li>
