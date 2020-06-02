@@ -17,6 +17,7 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 ### Task Lists
 - [x] **home.php** main UI.
 - [ ] **header.php**/Home page navigator.
+- [x] add pull-down list to header navigator.
 - [x] **sidebar.php** main code.
 - [ ] **single.php** main code.
 - [ ] **search.php** main code.
