@@ -59,6 +59,51 @@ a {
     color: rgb(25, 189, 161);
 }
 
+#header-blog-title {
+    float: left;
+    height: 100%;
+    line-height: 70px;
+    margin: 0 0 0 25px;
+}
+
+#header-navigator {
+    float: right;
+    height: 100%;
+}
+
+#header-navigator p {
+    font-size: 19px;
+}
+
+#header-navigator>ul {
+    list-style-type: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 70px;
+}
+
+#header-navigator>ul>li {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#header-navigator>ul>li>ul {
+    display: none;
+    list-style-type: none;
+    background-color: rgb(36, 40, 45);
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+    max-width: 200px;
+}
+
+#header-navigator>ul>li>ul>li {
+    padding: 10px 20px;
+    border-bottom: solid 1px #eee;
+    line-height: 18px;
+}
+
 #container-wrapper {
     padding: 90px 20px 20px 20px;
     margin: 0 auto 0 auto;

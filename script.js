@@ -20,3 +20,18 @@ jQuery(document).ready(function ($) {
         );
     });
 });
+
+jQuery(document).ready(function($) {
+    // get the pull-down target
+    var pdlist = $('#header-navigator>ul>li');
+
+    // add action to mouseenter
+    pdlist.mouseenter(function(){
+        $(this).children('ul').stop().slideDown(350);
+    });
+
+    // add action to mouseleave
+    pdlist.mouseleave(function(){
+        $(this).children('ul').stop().slideUp(700);
+    });
+});
