@@ -35,3 +35,10 @@ jQuery(document).ready(function($) {
         $(this).children('ul').stop().slideUp(600);
     });
 });
+
+// define searchform's click event.
+jQuery(document).ready(function($){
+    $('#searchsubmit').click(function(){
+        $('#searchform').submit();
+    });
+});

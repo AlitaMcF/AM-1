@@ -8,7 +8,7 @@
     </div>
     <div id="header-navigator">
         <div id="header-navigator-search">
-
+            <?php include(TEMPLATEPATH . '/searchform.php'); ?>
         </div>
         <ul>
             <li>

@@ -7,11 +7,19 @@ Version: 1.0
 Origin Author: WPDesigner
 Author: AlitaMcF
 */
-html{
+html {
     height: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6, blockquote, p {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p {
     margin: 0;
     padding: 0;
 }
@@ -77,23 +85,73 @@ a {
     padding: 0 0 0 20px;
 }
 
-#header-navigator>ul {
+#header-navigator-search {
+    float: left;
+    position: relative;
+    margin: auto 30px auto 0;
+}
+
+#header-navigator-search #searchform {
+    margin: 15px 0;
+    height: 40px;
+    background-color: rgb(36, 40, 45);
+    border-radius: 5px;
+    border: solid 2px rgb(25, 189, 161);
+    box-sizing: border-box;
+    display: block;
+    padding: 0 5px 0 7px;
+}
+
+#header-navigator-search #searchinput {
+    /* padding: 0 30px 0 0; */
+    padding: 0 0;
+    margin: 0;
+    height: 36px;
+    width: 150px;
+    border: none;
+    background-color: rgb(36, 40, 45);
+    box-sizing: border-box;
+    float: left;
+    color: #eee;
+    font-size: 20px;
+}
+:focus {
+    outline: none;
+}
+
+#header-navigator-search #searchsubmit {
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    height: 36px;
+    width: 36px;
+    background: url(img/search.png) center no-repeat;
+    background-size: 80%;
+    direction: ltr;
+    text-indent: -9999em;
+    box-sizing: border-box;
+    float: left;
+    cursor:pointer;
+}
+
+#header-navigator > ul {
     list-style-type: none;
     height: 100%;
     padding: 0;
     margin: 0;
     line-height: 70px;
     position: relative;
+    float: left;
 }
 
-#header-navigator>ul>li {
+#header-navigator > ul > li {
     float: left;
     margin: 0 10px 0 0;
     box-sizing: border-box;
     text-align: center;
 }
 
-#header-navigator>ul>li>ul {
+#header-navigator > ul > li > ul {
     display: none;
     list-style-type: none;
     background-color: rgb(36, 40, 45);
@@ -105,13 +163,13 @@ a {
     position: absolute;
 }
 
-#header-navigator>ul>li>ul>li {
+#header-navigator > ul > li > ul > li {
     padding: 10px 20px;
     border-bottom: solid 1px #eee;
     line-height: 18px;
 }
 
-#header-navigator>ul>li>ul>li:last-child {
+#header-navigator > ul > li > ul > li:last-child {
     border-bottom: none;
 }
 
@@ -178,7 +236,7 @@ a {
     border-bottom: solid 2px rgb(36, 40, 45);
 }
 
-.post .metainfo h2 a{
+.post .metainfo h2 a {
     font-family: Georgia, sans-serif;
     font-size: 26px;
     color: rgb(68, 75, 75);
@@ -198,7 +256,7 @@ a {
     margin: 0 35px 0 35px;
 }
 
-.entry p{
+.entry p {
     margin: 0 0 16px 0;
     text-align: justify;
 }
@@ -217,7 +275,7 @@ p.postmetadata a {
     float: left;
     width: 27%;
     margin: 0 0 20px 0;
-    border-radius:5px;
+    border-radius: 5px;
     border: solid 1px #ddd;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -317,7 +375,7 @@ p.postmetadata a {
 }
 
 #sidebar-big-things {
-    background-color: rgb(36, 40, 45) ;
+    background-color: rgb(36, 40, 45);
     text-align: center;
     color: #fff;
     font-size: 22px;
@@ -368,9 +426,9 @@ p.postmetadata a {
     font-family: Georgia, sans-serif;
 }
 
-.sidebar ul ul li{
-padding: 0;
-line-height: 24px;
+.sidebar ul ul li {
+    padding: 0;
+    line-height: 24px;
 }
 
 table#wp-calendar {
@@ -452,7 +510,7 @@ img {
 }
 
 #footer-copyright {
-    float:right;
+    float: right;
     width: 20%;
     height: 100%;
     text-align: center;
@@ -486,39 +544,40 @@ img {
     color: rgb(36, 40, 45);
 }
 
-.comments-template{
-	margin: 10px 0 0;
-	border-top: 1px solid #ccc;
-	padding: 10px 0 0;
+.comments-template {
+    margin: 10px 0 0;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 0;
 }
 
-.comments-template ol{
-	margin: 0;
-	padding: 0 0 15px;
-	list-style: none;
+.comments-template ol {
+    margin: 0;
+    padding: 0 0 15px;
+    list-style: none;
 }
 
-.comments-template ol li{
-	margin: 10px 0 0;
-	line-height: 18px;
-	padding: 0 0 10px;
-	border-bottom: 1px solid #ccc;
+.comments-template ol li {
+    margin: 10px 0 0;
+    line-height: 18px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-.comments-template h2, .comments-template h3{
-	font-family: Georgia, Sans-serif;
-	font-size: 16px;
+.comments-template h2,
+.comments-template h3 {
+    font-family: Georgia, Sans-serif;
+    font-size: 16px;
 }
 
-.commentmetadata{
-	font-size: 12px;
+.commentmetadata {
+    font-size: 12px;
 }
 
-.comments-template p.nocomments{
-	padding: 0;
+.comments-template p.nocomments {
+    padding: 0;
 }
 
-.comments-template textarea{
-	font-family: Arial, Helvetica, Georgia, Sans-serif;
-	font-size: 12px;
+.comments-template textarea {
+    font-family: Arial, Helvetica, Georgia, Sans-serif;
+    font-size: 12px;
 }
