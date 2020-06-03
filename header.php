@@ -14,9 +14,10 @@
             <li>
                 <p>All post &#8801;</p>
                 <ul>
-                    <li>nihao</li>
+                    <!-- <li>nihao</li>
                     <li>wohao</li>
-                    <li>tahao</li>
+                    <li>tahao</li> -->
+                    <?php wp_list_categories('show_count=0&title_li='); ?>
                 </ul>
             </li>
             <li>
@@ -43,7 +44,7 @@
                 </ul>
             </li>
             <li>
-                <p>MSG board</p>
+                <p><a>MSG board</a></p>
             </li>
         </ul>
     </div>
