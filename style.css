@@ -219,11 +219,6 @@ a {
     bottom: 0px;
 }
 
-#container-index {
-    float: left;
-    width: 70%;
-}
-
 #container-archive {
     width: 90%;
 }
@@ -237,11 +232,13 @@ a {
 }
 
 #container-page {
-    width: 90%;
+    width: 75%;
+    margin:  0 auto 0 auto;
 }
 
 #container-single {
-    width: 90%;
+    width: 75%;
+    float: left;
 }
 
 #container-home {
@@ -250,7 +247,7 @@ a {
     box-sizing: border-box;
 }
 
-.post {
+#container-home .post {
     padding: 0px 0 10px 0;
     background-color: #ffffff;
     margin: 0 0 40px 0;
@@ -260,13 +257,13 @@ a {
     border-bottom: solid 2px rgb(36, 40, 45);
 }
 
-.post .metainfo h2 a {
+#container-home .post .metainfo h2 a {
     font-family: Georgia, sans-serif;
     font-size: 26px;
     color: rgb(68, 75, 75);
 }
 
-.metainfo {
+#container-home .metainfo {
     box-sizing: border-box;
     padding: 16px 0 10px 30px;
     border-left: solid 6px rgb(61, 138, 125);
@@ -274,25 +271,92 @@ a {
     /* border-top-left-radius: 4px; */
 }
 
-.entry {
+#container-home .entry {
     font-size: 19px;
     line-height: 23px;
     margin: 0 35px 0 35px;
+    font-family: Arial, Helvetica;
 }
 
-.entry p {
+#container-home .entry p {
     margin: 0 0 16px 0;
     text-align: justify;
 }
 
-p.postmetadata {
+#container-home p.postmetadata {
     padding: 7px 0 0 0;
     color: #666666;
 }
 
-p.postmetadata a {
+#container-home p.postmetadata a {
     text-decoration: none;
     color: rgb(61, 138, 125);
+}
+
+#container-page .post {
+    box-sizing: border-box;
+    padding: 15px 0 0 0;
+}
+
+#container-page .post .metainfo {
+    text-align: center;
+}
+
+#container-page .post .metainfo h2 a {
+    font-size: 34px;
+    color: rgb(61, 138, 125);
+}
+
+#container-page .post .metainfo .postmetadata {
+    padding: 10px 20px 20px 20px;
+}
+
+#container-page .entry {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#container-page .entry p {
+    margin: 0 0 22px 0;
+    text-align: justify;
+}
+
+#container-page .entry img {
+    max-width: 100%;
+}
+
+#container-single .post {
+    box-sizing: border-box;
+    padding: 15px 0 0 0;
+}
+
+#container-single .post .metainfo {
+    text-align: center;
+}
+
+#container-single .post .metainfo h2 a {
+    font-size: 34px;
+    color: rgb(61, 138, 125);
+}
+
+#container-single .post .metainfo .postmetadata {
+    padding: 10px 20px 20px 20px;
+}
+
+#container-single .entry {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#container-single .entry p {
+    margin: 0 0 22px 0;
+    text-align: justify;
+}
+
+#container-single .entry img {
+    max-width: 100%;
 }
 
 #body-home .sidebar {

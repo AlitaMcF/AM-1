@@ -34,21 +34,14 @@
                 </ul>
             </li>
             <li>
-                <p>Futuristic plan &#8801;</p>
-                <ul>
-                    <li>Home Assistant</li>
-                    <li>Real intelligent robots</li>
-                </ul>
-            </li>
-            <li>
                 <p><a>MSG board</a></p>
             </li>
             <li>
-                <p>About me</p>
+                <p>About me &#8801;</p>
                 <ul>
                     <li><a href="http://localhost/alitamcf.blog/about-me">我是谁</a></li>
                     <li><a>我的母亲</a></li>
-                    <li><a>与世界的不期而遇</a></li>
+                    <li><a>未曾停下的脚步</a></li>
                 </ul>
             </li>
         </ul>

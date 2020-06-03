@@ -26,11 +26,6 @@
                                 </h2>
                                 <p class="postmetadata">
                                     <?php
-                                    _e('Topics&#58; ');
-                                    the_category(', ');
-                                    ?>
-                                    <?php
-                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
                                     comments_popup_link('No Comment', '1 Comment', '% Comments');
                                     _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
                                     the_date('Y-m-d');
