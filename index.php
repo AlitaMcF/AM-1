@@ -6,40 +6,44 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="body-home">
     <div id="whole-page">
         <?php get_header(); ?>
 
         <div id="container-wrapper">
-            <div id="container-index">
+
+            <?php get_sidebar(); ?>
+
+            <div id="container-home">
                 <?php
                 if (have_posts()) :
                     while (have_posts()) :
                         the_post();
                 ?>
                         <div class="post">
-                            <h2>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h2>
-                            <div class="entry">
-                                <?php
-                                the_content('<div style="text-align:center">more...</div>', true);
-                                ?>
+                            <div class="metainfo">
+                                <h2>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
+                                </h2>
                                 <p class="postmetadata">
                                     <?php
-                                    _e('Field under&#58; ');
+                                    _e('Topics&#58; ');
                                     the_category(', ');
-                                    _e(' by ');
-                                    the_author();
                                     ?>
-                                    <br />
                                     <?php
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
                                     comments_popup_link('No Comment', '1 Comment', '% Comments');
-                                    edit_post_link('Edit', ' | ', '');
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
+                                    the_date('Y-m-d');
                                     ?>
                                 </p>
+                            </div>
+                            <div class="entry">
+                                <?php
+                                the_content('<div style="text-align:left">[Read more...]</div>', true);
+                                ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
@@ -54,12 +58,10 @@
                     </div>
                 <?php endif; ?>
             </div>
-
-            <?php get_sidebar(); ?>
-
         </div>
 
         <?php get_footer(); ?>
+
     </div>
 </body>
 

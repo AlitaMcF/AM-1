@@ -14,9 +14,6 @@
             <li>
                 <p>All post &#8801;</p>
                 <ul>
-                    <!-- <li>nihao</li>
-                    <li>wohao</li>
-                    <li>tahao</li> -->
                     <?php wp_list_categories('show_count=0&title_li='); ?>
                 </ul>
             </li>
@@ -45,6 +42,14 @@
             </li>
             <li>
                 <p><a>MSG board</a></p>
+            </li>
+            <li>
+                <p>About me</p>
+                <ul>
+                    <li><a href="http://localhost/alitamcf.blog/about-me">我是谁</a></li>
+                    <li><a>我的母亲</a></li>
+                    <li><a>与世界的不期而遇</a></li>
+                </ul>
             </li>
         </ul>
     </div>

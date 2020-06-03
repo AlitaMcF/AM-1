@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="body-home">
     <div id="whole-page">
         <?php get_header(); ?>
 
@@ -18,18 +18,35 @@
                         the_post();
                 ?>
                         <div class="post">
-                            <h2>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h2>
+                            <div class="metainfo">
+                                <h2>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
+                                </h2>
+                                <p class="postmetadata">
+                                    <?php
+                                    _e('Topics&#58; ');
+                                    the_category(', ');
+                                    ?>
+                                    <?php
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
+                                    comments_popup_link('No Comment', '1 Comment', '% Comments');
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
+                                    the_date('Y-m-d');
+                                    ?>
+                                </p>
+                            </div>
                             <div class="entry">
-                                <?php the_content(); ?>
-                                <?php /*dividing page if needed*/ wp_link_pages(); ?>
-                                <?php edit_post_link('Edit', '<p>', '</p>'); ?>
+                                <?php
+                                the_content('<div style="text-align:left">[Read more...]</div>', true);
+                                ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
+                    <div id="navigator">
+                        <?php posts_nav_link(); ?>
+                    </div>
                 <?php else : ?>
                     <div class="post">
                         <h2>
