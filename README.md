@@ -9,7 +9,7 @@ Actually, it's really simple. I like and I do.
 In the foreseeable future, I have no plan to offer this version of theme a UI modidication function. If you really like it and would like to devote time to it, you can freely change the theme code.
 
 ## How dose AM-1 look like?
-![AM-1](https://shaunfong.com/wp-content/uploads/2020/06/AM-1-002-e1591170328447.png)
+![AM-1](screenshot.PNG)
 
 ## How to use it?
 1. Download the whole code in this repository and put them in a folder named **AM-1**.
@@ -20,7 +20,7 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 
 ### Task Lists
 - [x] **home.php** main UI.
-- [ ] **header.php**/Home page navigator.
+- [x] **header.php**/Home page navigator.
 - [x] add pull-down list to header navigator.
 - [x] **sidebar.php** main code.
 - [ ] **single.php** main code.
