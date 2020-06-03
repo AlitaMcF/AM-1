@@ -27,12 +27,14 @@ jQuery(document).ready(function($) {
 
     // add action to mouseenter
     pdlist.mouseenter(function(){
-        $(this).children('ul').stop(true).slideDown(200);
+        // $(this).children('ul').stop(true).slideDown(200);
+        $(this).children('ul').stop().show();
     });
 
     // add action to mouseleave
     pdlist.mouseleave(function(){
-        $(this).children('ul').stop(true).delay(300).slideUp(200);
+        // $(this).children('ul').stop(true).delay(300).slideUp(200);
+        $(this).children('ul').stop().hide();
     });
 });
 
