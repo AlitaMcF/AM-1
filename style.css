@@ -115,6 +115,8 @@ a {
     color: #eee;
     font-size: 18px;
     padding: 0 0 0 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 :focus {
     outline: none;
@@ -237,7 +239,7 @@ a {
 }
 
 #container-single {
-    width: 75%;
+    width: 70%;
     float: left;
 }
 
@@ -353,6 +355,10 @@ a {
 #container-single .entry p {
     margin: 0 0 22px 0;
     text-align: justify;
+}
+
+#container-single .entry figure {
+    margin: 0;
 }
 
 #container-single .entry img {
