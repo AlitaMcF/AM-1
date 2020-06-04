@@ -8,7 +8,7 @@ Actually, it's really simple. I like and I do.
 ## Can this theme modified through UI interface or WP dashboard?
 In the foreseeable future, I have no plan to offer this version of theme a UI modidication function. If you really like it and would like to devote time to it, you can freely change the theme code.
 
-## How dose AM-1 look like?
+## What dose AM-1 look like?
 ![AM-1](screenshot.PNG)
 
 ## How to use it?
