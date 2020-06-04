@@ -58,23 +58,34 @@ function my_contents_table($content)
     $r = '/<h([2-6]).*?\>(.*?)<\/h[2-6]>/is'; // for SEO-friendly, contents table only identify <h2> ~ <h6>
     if (is_single() && preg_match_all($r, $content, $matches)) {
         $preValue = 2;
+        $hStack = new SplStack();
         foreach ($matches[1] as $key => $value) {
             $title = trim(strip_tags($matches[2][$key]));
             $content = str_replace($matches[0][$key], '<h' . $value . ' id="title-' . $key . '">' . $title . '</h2>', $content);
 
             // The following part implements the hierarchy of contents table
-            if ($value == $preValue) {
+            if(!$hStack->isEmpty()){
+                if($hStack->top() == $value){
+                    $ul_li .= '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+                } elseif($hStack->top() < $value){
+                    $ul_li .= "<ul>\n" . '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+                    $hStack->push($value);
+                } elseif($hStack->top() > $value){
+                    while($hStack->top() > $value){
+                        $ul_li .= "</ul>\n";
+                        $hStack->pop();
+                    }
+                    $ul_li .= '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+                }
+            } else{
                 $ul_li .= '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
-            } elseif ($value > $preValue) {
-                $ul_li .= '<ul><li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
-            } elseif ($value < $preValue) {
-                $ul_li .= "</ul>\n" . '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+                $hStack->push($value);
             }
-            $preValue = $value;
         }
         $content = "\n<div id=\"article-index\">
-            <strong>文章目录</strong>
-            <ul id=\"index-ul\">\n" . $ul_li . "</ul>
+            <div id=\"article-index-title\"><strong>Contents table</strong></div>
+            <hr id=\"article-index-hr\" />
+            <div id=\"article-index-table\"><ul id=\"index-ul\">\n" . $ul_li . "</ul></div>
             </div>\n" . $content;
     }
     return $content;
