@@ -58,6 +58,9 @@
                     </div>
                 <?php endif; ?>
             </div>
+
+            <!-- <div id="content-table-area"><?php dynamic_sidebar('contentTable'); ?></div> -->
+
         </div>
 
         <?php get_footer(); ?>

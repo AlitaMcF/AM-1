@@ -19,8 +19,9 @@ of our page and make our page look a little weird.
 */
 add_filter('show_admin_bar', '__return_false');
 
-add_action( 'wp_enqueue_scripts', 'add_my_script' );
-function add_my_script() {
+add_action('wp_enqueue_scripts', 'add_my_script');
+function add_my_script()
+{
     wp_enqueue_script(
         'my_script', // name your script so that you can attach other scripts and de-register, etc.
         get_template_directory_uri() . '/script.js', // this is the location of your script file
@@ -31,14 +32,15 @@ function add_my_script() {
 /* 
 register a widget area in sidebar.php 
 */
-add_action( 'widgets_init', 'my_register_sidebar' );
-function my_register_sidebar() {
+add_action('widgets_init', 'my_register_sidebar');
+function my_register_sidebar()
+{
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
             'id'            => 'primaryWidget',
-            'name'          => __( 'Primary Sidebar' ),
-            'description'   => __( '主页sidebar下方添加组件' ),
+            'name'          => __('Primary Sidebar'),
+            'description'   => __('主页sidebar下方添加组件'),
             'before_widget' => '<div id="%1$s" class="widget %2$s" style="padding: 20px 30px; font-size: 18px">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title" style="text-align: center">',
@@ -47,3 +49,33 @@ function my_register_sidebar() {
     );
 }
 
+// Contents table
+add_filter('the_content', 'my_contents_table');
+function my_contents_table($content)
+{
+    $matches = array();
+    $ul_li = '';
+    $r = '/<h([2-6]).*?\>(.*?)<\/h[2-6]>/is'; // for SEO-friendly, contents table only identify <h2> ~ <h6>
+    if (is_single() && preg_match_all($r, $content, $matches)) {
+        $preValue = 2;
+        foreach ($matches[1] as $key => $value) {
+            $title = trim(strip_tags($matches[2][$key]));
+            $content = str_replace($matches[0][$key], '<h' . $value . ' id="title-' . $key . '">' . $title . '</h2>', $content);
+
+            // The following part implements the hierarchy of contents table
+            if ($value == $preValue) {
+                $ul_li .= '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+            } elseif ($value > $preValue) {
+                $ul_li .= '<ul><li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+            } elseif ($value < $preValue) {
+                $ul_li .= "</ul>\n" . '<li><a href="#title-' . $key . '" title="' . $title . '">' . $title . "</a></li>\n";
+            }
+            $preValue = $value;
+        }
+        $content = "\n<div id=\"article-index\">
+            <strong>文章目录</strong>
+            <ul id=\"index-ul\">\n" . $ul_li . "</ul>
+            </div>\n" . $content;
+    }
+    return $content;
+}

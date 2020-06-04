@@ -134,7 +134,7 @@ a {
     text-indent: -9999em;
     box-sizing: border-box;
     float: left;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #header-navigator > ul {
@@ -158,7 +158,7 @@ a {
     cursor: default;
 }
 
-#header-navigator > ul >li > p > a {
+#header-navigator > ul > li > p > a {
     font-size: 19px;
     color: #eee;
 }
@@ -180,18 +180,17 @@ a {
     position: absolute;
 }
 
-
 #header-navigator > ul > li > ul > li {
     padding: 10px 20px;
     border-bottom: solid 1px #eee;
     line-height: 22px;
     max-width: 220px;
 }
-#header-navigator > ul > li > ul >li > a {
+#header-navigator > ul > li > ul > li > a {
     font-size: 18px;
     color: #eee;
 }
-#header-navigator > ul > li > ul >li > a:hover {
+#header-navigator > ul > li > ul > li > a:hover {
     color: rgb(25, 189, 161);
 }
 
@@ -235,7 +234,7 @@ a {
 
 #container-page {
     width: 75%;
-    margin:  0 auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 #container-single {
@@ -674,4 +673,42 @@ img {
 .comments-template textarea {
     font-family: Arial, Helvetica, Georgia, Sans-serif;
     font-size: 12px;
+}
+
+
+
+
+
+
+/* 文章目录 */
+#article-index {
+    -moz-border-radius: 6px 6px 6px 6px;
+    border: 1px solid #dedfe1;
+    float: right;
+    margin: 0 0 15px 15px;
+    padding: 0 6px;
+    width: 300px;
+    line-height: 23px;
+}
+#article-index strong {
+    border-bottom: 1px dashed #dddddd;
+    display: block;
+    line-height: 30px;
+    padding: 0 4px;
+}
+#index-ul {
+    margin: 0;
+    padding-bottom: 10px;
+}
+#index-ul li {
+    background: none repeat scroll 0 0 transparent;
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 20px;
+}
+#index-ul a {
+    color: #4c4c4c;
+}
+#index-ul a:hover {
+    color: #009cee;
 }
