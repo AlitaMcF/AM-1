@@ -29,4 +29,4 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 - [x] **footer.php** main code.
 - [x] add **GoTOP** button.
 - [x] **page.php**
-- [ ] **single.php**
+- [x] add contents table for single post
