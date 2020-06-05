@@ -297,10 +297,11 @@ a {
     padding: 0px 0 10px 0;
     background-color: #ffffff;
     margin: 0 0 40px 0;
-    /* border-radius: 5px; */
-    /*border: solid 1px #ddd;*/
+    border-radius: 5px;
+    box-shadow: 0 0 12px #ccc;
+    /* border: solid 1px #ddd; */
     position: relative;
-    border-bottom: solid 2px rgb(36, 40, 45);
+    /* border-bottom: solid 2px rgb(36, 40, 45); */
 }
 
 #container-home .post .metainfo h2 a {
@@ -314,7 +315,7 @@ a {
     padding: 16px 0 10px 30px;
     border-left: solid 6px rgb(61, 138, 125);
     margin: 0 0 10px 0;
-    /* border-top-left-radius: 4px; */
+    border-top-left-radius: 4px;
 }
 
 #container-home .entry {
