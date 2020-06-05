@@ -273,7 +273,25 @@ a {
     margin: 4px 0 10px 0;
 }
 
+#container-wrapper .entry pre {
+    border-radius: 5px;
+    padding: 10px 18px 10px 18px;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 0 0 12px #ccc;
+}
 
+#container-wrapper .entry pre::-webkit-scrollbar {
+    display: none; /*hide the scrollbar*/
+}
+
+#container-wrapper .entry p > code {
+    box-shadow: 0 0 8px #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 1px 3px 1px 3px;
+    margin: 0 3px 0 3px;
+}
 
 #container-home .post {
     padding: 0px 0 10px 0;
