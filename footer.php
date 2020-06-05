@@ -7,6 +7,10 @@
             <div class="footer-social-item">
                 <p class="footer-social-item-head">Awesome sites</p>
                 <!-- <hr id="footer-social-hr" /> -->
+                <p><a href="https://www.oschina.net/">OSChina</a></p>
+                <p><a href="https://aistudio.baidu.com/aistudio/index">AI Studio</a></p>
+                <p><a href="https://gitee.com/">Gitee</a></p>
+                <p><a href="https://aistudio.baidu.com/aistudio/index">Colabboratory</a></p>
                 <p><a href="https://www.coursera.org/">Coursera</a></p>
                 <p><a href="https://www.nasa.gov/">NASA</a></p>
                 <p><a href="https://www.bilibili.com/">Bilibili</a></p>
@@ -14,6 +18,9 @@
 
         </div>
         <div id="footer-copyright">
+            <p>This theme:<a href="https://github.com/AlitaMcF/AM-1/"></a></p>
+            <br>
+            <br>
             <p id="footer-paragraph">
                 Copyright &#169;
                 <?php echo date('Y'); ?>
