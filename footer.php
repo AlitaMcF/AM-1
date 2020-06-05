@@ -4,6 +4,7 @@
             <div id="footer-social-img-div">
                 <img src="https://shaunfong.com/wp-content/uploads/2020/05/WechatIMG105.jpeg" alt="LongMarch-5" />
             </div>
+
             <div class="footer-social-item">
                 <p class="footer-social-item-head">Awesome sites</p>
                 <!-- <hr id="footer-social-hr" /> -->

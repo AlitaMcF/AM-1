@@ -1,6 +1,8 @@
 <div class="sidebar">
     <div id="sidebar-profile">
-        <div id="sidebar-profile-bg"></div>
+        <div id="sidebar-profile-bg">
+        <a href='https://gitee.com/alitamcf/AM-1' style="float: right;"><img src='https://gitee.com/alitamcf/AM-1/widgets/widget_1.svg' alt='Fork me on Gitee'></img></a>
+        </div>
         <div id="sidebar-myinfo">
             <div id="sidebar-myinfo-img-div">
                 <img id="sidebar-myinfo-img" src="https://shaunfong.com/wp-content/uploads/2020/05/1021590770586_.pic_.jpg" alt="<?php the_title(); ?>" />
