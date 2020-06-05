@@ -249,6 +249,32 @@ a {
     box-sizing: border-box;
 }
 
+#container-wrapper .entry h1 {
+    margin: 4px 0 10px 0;
+}
+
+#container-wrapper .entry h2 {
+    margin: 4px 0 10px 0;
+}
+
+#container-wrapper .entry h3 {
+    margin: 4px 0 10px 0;
+}
+
+#container-wrapper .entry h4 {
+    margin: 4px 0 10px 0;
+}
+
+#container-wrapper .entry h5 {
+    margin: 4px 0 10px 0;
+}
+
+#container-wrapper .entry h6 {
+    margin: 4px 0 10px 0;
+}
+
+
+
 #container-home .post {
     padding: 0px 0 10px 0;
     background-color: #ffffff;
