@@ -252,6 +252,17 @@ a {
     box-sizing: border-box;
 }
 
+#container-404 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container-404 p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .container-wrapper .entry {
     line-height: 27px;
 }
