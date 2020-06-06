@@ -23,10 +23,11 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 - [x] **header.php**/Home page navigator.
 - [x] add pull-down list to header navigator.
 - [x] **sidebar.php** main code.
-- [ ] **single.php** main code.
-- [ ] **search.php** main code.
+- [x] **single.php** main code.
+- [x] **search.php** main code.
 - [ ] **404.php** main code.
 - [x] **footer.php** main code.
 - [x] add **GoTOP** button.
 - [x] **page.php**
 - [x] add contents table for single post
+- [ ] 响应式设计
