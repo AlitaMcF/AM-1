@@ -775,3 +775,8 @@ img {
 #index-ul a:hover {
     color: rgb(61, 138, 125);
 }
+
+/*set the subtitle jump offset, to avoid covered by headerbar*/
+.subtitle:target {
+    padding-top: 78px;
+}

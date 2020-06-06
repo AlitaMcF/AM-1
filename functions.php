@@ -61,7 +61,7 @@ function my_contents_table($content)
         $hStack = new SplStack();
         foreach ($matches[1] as $key => $value) {
             $title = trim(strip_tags($matches[2][$key]));
-            $content = str_replace($matches[0][$key], '<h' . $value . ' id="title-' . $key . '">' . $title . '</h2>', $content);
+            $content = str_replace($matches[0][$key], '<h' . $value . ' id="title-' . $key . '" class="subtitle">' . $title . '</h'. $value . '>', $content);
 
             // The following part implements the hierarchy of contents table
             if(!$hStack->isEmpty()){
