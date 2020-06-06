@@ -51,8 +51,18 @@
                             </div>
                         </div>
                     <?php endwhile; ?>
+                    <div id="end-flag">
+                        <hr class="end-flag-hr">
+                        &nbsp;&nbsp;&nbsp;<b>END<b>&nbsp;&nbsp;&nbsp;
+                        <hr class="end-flag-hr">
+                    </div>
                     <div id="navigator">
-                        <?php posts_nav_link(); ?>
+                        <div id="navigator-item-left" style="float: left;">
+                            <?php previous_post_link('&laquo; %link'); ?>
+                        </div>
+                        <div id="navigator-item-right" style="float: right;">
+                            <?php next_post_link('%link &raquo;'); ?>
+                        </div>
                     </div>
                 <?php else : ?>
                     <div class="post">

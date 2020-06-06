@@ -4,11 +4,15 @@
 <head>
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/github.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </head>
 
-<body>
+<body id="body-home">
     <div id="whole-page">
-
         <?php get_header(); ?>
 
         <div id="container-wrapper">
@@ -19,28 +23,29 @@
                         the_post();
                 ?>
                         <div class="post">
-                            <h2>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h2>
-                            <div class="entry">
-                                <?php
-                                the_content();
-                                ?>
+                            <div class="metainfo">
+                                <h2>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
+                                </h2>
                                 <p class="postmetadata">
                                     <?php
-                                    _e('Field under&#58; ');
+                                    _e('Topics&#58; ');
                                     the_category(', ');
-                                    _e(' by ');
-                                    the_author();
                                     ?>
-                                    <br />
                                     <?php
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
                                     comments_popup_link('No Comment', '1 Comment', '% Comments');
-                                    edit_post_link('Edit', ' | ', '');
+                                    _e('&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;');
+                                    the_date('Y-m-d');
                                     ?>
                                 </p>
+                            </div>
+                            <div class="entry">
+                                <?php
+                                the_content('<div style="text-align:left">[Read more...]</div>', true);
+                                ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
