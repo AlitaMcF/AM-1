@@ -48,11 +48,9 @@
                         <?php posts_nav_link(); ?>
                     </div>
                 <?php else : ?>
-                    <div class="post">
-                        <h2>
-                            <?php _e('Not Found'); ?>
-                        </h2>
-                    </div>
+                    <h2>
+                        <?php _e('Not Found :('); ?>
+                    </h2>
                 <?php endif; ?>
             </div>
         </div>

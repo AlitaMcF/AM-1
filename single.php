@@ -54,7 +54,7 @@
                     <div id="end-flag">
                         <hr class="end-flag-hr">
                         &nbsp;&nbsp;&nbsp;<b>END<b>&nbsp;&nbsp;&nbsp;
-                        <hr class="end-flag-hr">
+                                <hr class="end-flag-hr">
                     </div>
                     <div id="navigator">
                         <div id="navigator-item-left" style="float: left;">
@@ -65,11 +65,9 @@
                         </div>
                     </div>
                 <?php else : ?>
-                    <div class="post">
-                        <h2>
-                            <?php _e('Not Found'); ?>
-                        </h2>
-                    </div>
+                    <h2>
+                        <?php _e('Not Found :('); ?>
+                    </h2>
                 <?php endif; ?>
             </div>
 
