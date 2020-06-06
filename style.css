@@ -249,28 +249,44 @@ a {
     box-sizing: border-box;
 }
 
+.container-wrapper .entry {
+    line-height: 27px;
+}
+
 #container-wrapper .entry h1 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 29px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry h2 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry h3 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry h4 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry h5 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry h6 {
-    margin: 4px 0 10px 0;
+    margin: 4px 0 13px 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #container-wrapper .entry pre {
@@ -278,7 +294,8 @@ a {
     padding: 10px 18px 10px 18px;
     box-sizing: border-box;
     overflow: auto;
-    box-shadow: 0 0 12px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    /* border: solid rgb(36, 40, 45) 1px; */
 }
 
 #container-wrapper .entry pre::-webkit-scrollbar {
@@ -291,6 +308,30 @@ a {
     border-radius: 3px;
     padding: 2px 4px 2px 4px;
     margin: 0 3px 0 3px;
+}
+
+#container-wrapper .entry pre code {
+    padding: 0;
+    background-color: #fff;
+}
+
+#container-wrapper .entry pre code::-webkit-scrollbar {
+    display: none;
+}
+
+#container-wrapper .entry blockquote {
+    padding: 5px 10px 5px 20px;
+    margin: 0 0 20px 0px;
+    overflow: auto;
+    box-sizing: border-box;
+    /* border: solid 1px rgb(36, 40, 45); */
+    border-radius: 5px;
+    border-left: solid 6px #666;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#container-wrapper .entry blockquote p {
+    margin: 0 0 8px 0;
 }
 
 #container-home .post {
@@ -306,7 +347,7 @@ a {
 
 #container-home .post .metainfo h2 a {
     font-family: Georgia, sans-serif;
-    font-size: 26px;
+    font-size: 29px;
     color: rgb(68, 75, 75);
 }
 
@@ -320,13 +361,13 @@ a {
 
 #container-home .entry {
     font-size: 19px;
-    line-height: 23px;
+    line-height: 27px;
     margin: 0 35px 0 35px;
     font-family: Arial, Helvetica;
 }
 
 #container-home .entry p {
-    margin: 0 0 16px 0;
+    margin: 0 0 26px 0;
     text-align: justify;
 }
 
@@ -656,7 +697,7 @@ img {
     padding: 20px 0 0 0;
     border-left: solid 1px rgb(136, 199, 188);
     font-size: 15px;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 #goTop {
