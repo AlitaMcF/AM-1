@@ -9,7 +9,12 @@ Actually, it's really simple. I like and I do.
 In the foreseeable future, I have no plan to offer this version of theme a UI modidication function. If you really like it and would like to devote time to it, you can freely change the theme code.
 
 ## What dose AM-1 look like?
+### Home page:
 ![AM-1](screenshot.PNG)
+### Single post page (top):
+![head](img/top.png)
+### Single post page (bottom):
+![tail](img/bottom.png)
 
 ## How to use it?
 1. Download the whole code in this repository and put them in a folder named **AM-1**.
@@ -30,4 +35,6 @@ In the foreseeable future, I have no plan to offer this version of theme a UI mo
 - [x] add **GoTOP** button.
 - [x] **page.php**
 - [x] add contents table for single post
+- [x] **archive.php**
+- [x] **category.php**
 - [ ] 响应式设计
