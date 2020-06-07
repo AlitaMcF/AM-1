@@ -53,7 +53,11 @@
                         </div>
                     <?php endwhile; ?>
                     <div id="navigator">
-                        <?php posts_nav_link(); ?>
+                        
+                        <?php the_posts_pagination(array(
+                            // 'prev_next' => false, 
+                            'type' => 'list', 
+                            'screen_reader_text' => ' ',)); ?>
                     </div>
                 <?php else : ?>
                     <h2>
