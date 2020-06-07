@@ -7,6 +7,10 @@ Version: 1.0
 Origin Author: WPDesigner
 Author: AlitaMcF
 */
+
+/*load google Noto Sans SC font*/
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif+SC);
+
 html {
     height: 100%;
 }
@@ -31,7 +35,7 @@ body {
     vertical-align: top;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, Georgia, sans-serif;
+    font-family: 'Noto Serif SC', Arial, Helvetica, Georgia, sans-serif;
     font-size: 16px;
     height: 100%;
 }
@@ -263,8 +267,8 @@ a {
     font-weight: bold;
 }
 
-.container-wrapper .entry {
-    line-height: 27px;
+#container-wrapper .entry {
+    line-height: 30px;
 }
 
 #container-wrapper .entry h1 {
@@ -308,9 +312,10 @@ a {
     padding: 10px 18px 10px 18px;
     box-sizing: border-box;
     overflow: auto;
-    box-shadow: 0 0 10px #ccc;
+    /* box-shadow: 0 0 10px #ccc; */
+    /* background-color: #eee; */
     margin: 0 0 25px 0;
-    /* border: solid rgb(36, 40, 45) 1px; */
+    border: solid rgb(36, 40, 45) 1px;
 }
 
 #container-wrapper .entry pre::-webkit-scrollbar {
@@ -318,10 +323,11 @@ a {
 }
 
 #container-wrapper .entry p > code {
-    box-shadow: 0 0 8px #ccc;
+    /* box-shadow: 0 0 8px #ccc; */
+    background-color: #ddd;
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 2px 4px 2px 4px;
+    padding: 4px 6px 4px 6px;
     margin: 0 3px 0 3px;
 }
 
@@ -349,6 +355,10 @@ a {
     margin: 0 0 8px 0;
 }
 
+#container-wrapper .entry figure {
+    text-align: center;
+}
+
 #container-home .post {
     padding: 0px 0 10px 0;
     background-color: #ffffff;
@@ -361,7 +371,7 @@ a {
 }
 
 #container-home .post .metainfo h2 a {
-    font-family: Georgia, sans-serif;
+    /* font-family: Georgia, sans-serif; */
     font-size: 29px;
     color: rgb(68, 75, 75);
 }
@@ -376,9 +386,9 @@ a {
 
 #container-home .entry {
     font-size: 19px;
-    line-height: 27px;
+    /* line-height: 27px; */
     margin: 0 35px 0 35px;
-    font-family: Arial, Helvetica;
+    /* font-family: Arial, Helvetica; */
 }
 
 #container-home .entry p {
@@ -417,7 +427,7 @@ a {
 #container-page .entry {
     box-sizing: border-box;
     font-size: 18px;
-    line-height: 27px;
+    /* line-height: 27px; */
 }
 
 #container-page .entry p {
@@ -450,7 +460,7 @@ a {
 #container-single .entry {
     box-sizing: border-box;
     font-size: 18px;
-    line-height: 27px;
+    /* line-height: 27px; */
 }
 
 #container-single .entry p {
@@ -489,7 +499,7 @@ a {
 }
 
 #container-category .post .metainfo h2 a {
-    font-family: Georgia, sans-serif;
+    /* font-family: Georgia, sans-serif; */
     font-size: 29px;
     color: rgb(68, 75, 75);
 }
@@ -504,9 +514,9 @@ a {
 
 #container-category .entry {
     font-size: 19px;
-    line-height: 27px;
+    /* line-height: 27px; */
     margin: 0 35px 0 35px;
-    font-family: Arial, Helvetica;
+    /* font-family: Arial, Helvetica; */
 }
 
 #container-category .entry p {
@@ -537,7 +547,7 @@ a {
 }
 
 #container-archive .post .metainfo h2 a {
-    font-family: Georgia, sans-serif;
+    /* font-family: Georgia, sans-serif; */
     font-size: 29px;
     color: rgb(68, 75, 75);
 }
@@ -552,9 +562,9 @@ a {
 
 #container-archive .entry {
     font-size: 19px;
-    line-height: 27px;
+    /* line-height: 27px; */
     margin: 0 35px 0 35px;
-    font-family: Arial, Helvetica;
+    /* font-family: Arial, Helvetica; */
 }
 
 #container-archive .entry p {
@@ -585,7 +595,7 @@ a {
 }
 
 #container-search .post .metainfo h2 a {
-    font-family: Georgia, sans-serif;
+    /* font-family: Georgia, sans-serif; */
     font-size: 29px;
     color: rgb(68, 75, 75);
 }
@@ -600,9 +610,9 @@ a {
 
 #container-search .entry {
     font-size: 19px;
-    line-height: 27px;
+    /* line-height: 27px; */
     margin: 0 35px 0 35px;
-    font-family: Arial, Helvetica;
+    /* font-family: Arial, Helvetica; */
 }
 
 #container-search .entry p {
@@ -773,7 +783,7 @@ a {
 
 .sidebar ul li h2 {
     font-size: 20px;
-    font-family: Georgia, sans-serif;
+    /* font-family: Georgia, sans-serif; */
 }
 
 .sidebar ul ul li {
@@ -915,7 +925,7 @@ img {
 
 .comments-template h2,
 .comments-template h3 {
-    font-family: Georgia, Sans-serif;
+    /* font-family: Georgia, Sans-serif; */
     font-size: 16px;
 }
 
@@ -928,7 +938,7 @@ img {
 }
 
 .comments-template textarea {
-    font-family: Arial, Helvetica, Georgia, Sans-serif;
+    /* font-family: Arial, Helvetica, Georgia, Sans-serif; */
     font-size: 12px;
 }
 
@@ -937,11 +947,11 @@ img {
 #article-index {
     float: right;
     width: 250px;
-    line-height: 23px;
+    line-height: 27px;
     margin: 0px 0px 20px 20px;
     border-radius: 5px;
     border: 2px solid rgb(36, 40, 45);
-    padding: 0 0 6px 0;
+    padding: 0 0 10px 0;
 }
 
 #article-index #article-index-title {
