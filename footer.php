@@ -8,12 +8,12 @@
             <div class="footer-social-item">
                 <p class="footer-social-item-head" style="font-size: 20px;">Awesome sites</p>
                 <!-- <hr id="footer-social-hr" /> -->
-                <p><a href="https://www.oschina.net/">OSChina</a></p>
-                <p><a href="https://aistudio.baidu.com/aistudio/index">AI Studio</a></p>
-                <p><a href="https://gitee.com/">Gitee</a></p>
-                <p><a href="https://aistudio.baidu.com/aistudio/index">Colabboratory</a></p>
-                <p><a href="https://www.coursera.org/">Coursera</a></p>
-                <p><a href="https://www.nasa.gov/">NASA</a></p>
+                <p><a href="https://www.oschina.net/" target="_blank">OSChina</a></p>
+                <p><a href="https://aistudio.baidu.com/aistudio/index" target="_blank">AI Studio</a></p>
+                <p><a href="https://gitee.com/" target="_blank">Gitee</a></p>
+                <p><a href="https://aistudio.baidu.com/aistudio/index" target="_blank">Colaboratory</a></p>
+                <p><a href="https://www.coursera.org/" target="_blank">Coursera</a></p>
+                <p><a href="https://www.nasa.gov/" target="_blank">NASA</a></p>
             </div>
 
         </div>

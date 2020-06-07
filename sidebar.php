@@ -1,7 +1,7 @@
  <div class="sidebar">
      <div id="sidebar-profile">
          <div id="sidebar-profile-bg">
-             <a href='https://gitee.com/alitamcf/' style="float: right;">
+             <a href='https://gitee.com/alitamcf/' target="_blank" style="float: right;">
                  <img src='https://gitee.com/alitamcf/AM-1/widgets/widget_1.svg' alt='Subscribe me on Gitee'></img>
              </a>
          </div>

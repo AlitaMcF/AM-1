@@ -910,6 +910,7 @@ img {
     border-bottom: 0px;
     background-color: rgb(61, 138, 125);
     color: rgb(36, 40, 45);
+    cursor: pointer;
 }
 
 .comments-template {
