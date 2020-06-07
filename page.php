@@ -39,7 +39,7 @@
                             </div>
                             <div class="entry">
                                 <?php
-                                the_content('<div style="text-align:left">[Read more...]</div>', true);
+                                the_content();
                                 ?>
                             </div>
                         </div>
