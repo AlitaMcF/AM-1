@@ -19,9 +19,9 @@ I like and I do.
 ![tail](img/bottom.png)
 
 ## How to use it?
-1. Download the whole code in this repository and put them in a folder named **AM-1**.
+1. Clone this repository to your server. Using command:`git clone https://github.com/AlitaMcf/AM-1`or`git clone https://gitee.com/alitamcf/AM-1`
 2. Then copy **AM-1** to the path: **YOUR WORDPRESS ROOT/wp-content/themes/**. 
-3. The last step, login to your WP dashboard and change your current theme to **AM-1**.
+3. Ater that, log in to your WP dashboard and change your current theme to **AM-1**.
 4. Modify the theme code freely.
 
 ****
