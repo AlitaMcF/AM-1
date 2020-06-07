@@ -9,8 +9,8 @@ Author: AlitaMcF
 */
 
 /*load google Noto Sans SC font*/
-@import url(http://fonts.googleapis.com/css?family=Noto + Serif + SC);
-@import url(http://fonts.googleapis.com/css?family=Noto + Sans + SC);
+/* @import url(http://fonts.googleapis.com/css?family=Noto+Serif+SC);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans+SC); */
 
 @font-face {
     font-family: Google Noto;
