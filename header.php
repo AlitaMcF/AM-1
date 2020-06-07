@@ -20,27 +20,26 @@
             <li>
                 <p>Series &#8801;</p>
                 <ul>
-                    <li>LeetCode</li>
-                    <li>WordPress</li>
-                    <li>ML Framework</li>
+                    <li>Operating System</li>
+                    <li>Machine Learning</li>
                     <li>Arduino</li>
+                    <li><a href="https://shaunfong.com/tag/algorithm/">Algorithm</a></li>
                 </ul>
             </li>
             <li>
                 <p>Awesome projects &#8801;</p>
                 <ul>
-                    <li>Self ML-Framework</li>
-                    <li>Arduino robots</li>
+                    <li>Self ML Library</li>
+                    <li>Arduino</li>
                 </ul>
             </li>
             <li>
-                <p><a>MSG board</a></p>
+                <p><a href="https://shaunfong.com/timeline/">Billboard</a></p>
             </li>
             <li>
                 <p>About me &#8801;</p>
                 <ul>
-                    <li><a href="http://localhost/alitamcf.blog/about-me">我是谁</a></li>
-                    <li><a>我的母亲</a></li>
+                    <li><a href="https://shaunfong.com/aboutme/">我是谁</a></li>
                     <li><a>未曾停下的脚步</a></li>
                 </ul>
             </li>

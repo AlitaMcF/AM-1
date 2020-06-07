@@ -19,7 +19,7 @@
         </div>
         <div id="footer-copyright">
             <p>Theme: <a href="https://github.com/AlitaMcF/AM-1/">AM-1</a></p>
-            <p>Designed by AlitaMcF</p>
+            <p>Designed by <a href="https://shaunfong.com/">AlitaMcF</a></p>
             <br>
             <br>
             <br>
