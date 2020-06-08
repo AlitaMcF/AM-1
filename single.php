@@ -69,9 +69,10 @@
                         <?php _e('Not Found :('); ?>
                     </h2>
                 <?php endif; ?>
-            </div>
 
-            <!-- <div id="content-table-area"><?php dynamic_sidebar('contentTable'); ?></div> -->
+                <section class="comments"></section>
+
+            </div>
 
         </div>
 
