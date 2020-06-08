@@ -1,5 +1,5 @@
 # AM-1
-This's a personal WordPress theme.
+This's a personal WordPress theme. Demonstration website: [AlitaMcF' Blog](https://shaunfong.com)
 ###### Specific notation：I can't offer the security guarantee for this theme and don't responsible for any possible commercial loss. Please pay attention to the security before using this theme.
 
 ## Why I make the theme by self?
