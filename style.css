@@ -124,7 +124,7 @@ a {
     height: 36px;
     width: 150px;
     border: none;
-    background-color: rgb(36, 40, 45);
+    background-color: transparent;
     box-sizing: border-box;
     float: left;
     color: #eee;
