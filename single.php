@@ -52,7 +52,7 @@
                         </div>
 
                         <?php
-                        if (comments_open() || get_comments_number()) { // The comment module is displayed only when the comment function is enabled or comments are available
+                        if (get_comments_number()) { // The comment module is displayed only when the comment function is enabled or comments are available
                             comments_template(); // without parameter will use the comments.php file
                         }
                         ?>
