@@ -51,9 +51,10 @@
                             </div>
                         </div>
 
-                        
+                        <?php
+                        comments_template();
+                        ?>
 
-                        <div class="comments"></div>
 
                     <?php endwhile; ?>
                     <div id="end-flag">
