@@ -51,11 +51,9 @@
                             </div>
                         </div>
 
-                        <?php
-                        if (get_comments_number()) { // The comment module is displayed only when the comment function is enabled or comments are available
-                            comments_template(); // without parameter will use the comments.php file
-                        }
-                        ?>
+                        
+
+                        <div class="comments"></div>
 
                     <?php endwhile; ?>
                     <div id="end-flag">
