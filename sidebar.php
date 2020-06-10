@@ -19,7 +19,7 @@
                  <p>
                      "
                      <!-- <?php bloginfo('description'); ?> -->
-                     十年饮冰，难凉热血
+                     撸猫才是第一生产力
                      "
                  </p>
              </div>
@@ -34,6 +34,19 @@
                      <a href="https://www.zhihu.com/people/tangmoon">
                          <span class="sidebar-myinfo-contact-item">
                              知乎
+                         </span>
+                     </a>
+                 </div>
+                 <div id="sidebar-myinfo-contact-line1">
+                     <a href="https://www.v2ex.com/?r=Fobs">
+                         <span class="sidebar-myinfo-contact-item">
+                             V2EX
+                         </span>
+                     </a>
+                     <span id="sidebar-myinfo-contact-divider"></span>
+                     <a href="">
+                         <span class="sidebar-myinfo-contact-item">
+                            占个座
                          </span>
                      </a>
                  </div>

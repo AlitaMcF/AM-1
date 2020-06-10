@@ -708,7 +708,7 @@ a {
 
 #sidebar-myinfo-contact-line1 {
     width: 200px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     text-align: center;
     padding: 2px 0 2px 0;
     box-sizing: border-box;
