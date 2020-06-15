@@ -42,3 +42,7 @@ I like and I do.
 - [x] **category.php**
 - [ ] ~~响应式设计~~
 - [ ] ~~管理页自定义外观~~
+
+### Todo Lists
+- [ ] design comment module.
+- [ ] fix the bug of DISQUS module.
